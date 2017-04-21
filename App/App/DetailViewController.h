@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CTSTestSuitesManager.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UITableViewController
 
-@property (strong, nonatomic) NSDate *detailItem;
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (strong, nonatomic) CTSTestGroup *detailItem;
 
 @end
 

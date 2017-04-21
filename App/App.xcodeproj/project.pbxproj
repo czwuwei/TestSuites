@@ -15,6 +15,10 @@
 		B8ED31E11EA9D35000AF9549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8ED31E01EA9D35000AF9549 /* Assets.xcassets */; };
 		B8ED31E41EA9D35000AF9549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8ED31E21EA9D35000AF9549 /* LaunchScreen.storyboard */; };
 		B8ED31EF1EA9D35000AF9549 /* AppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED31EE1EA9D35000AF9549 /* AppUITests.m */; };
+		B8ED32001EA9D45300AF9549 /* CTSTestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED31FB1EA9D45300AF9549 /* CTSTestGroup.m */; };
+		B8ED32011EA9D45300AF9549 /* CTSTestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED31FD1EA9D45300AF9549 /* CTSTestItem.m */; };
+		B8ED32021EA9D45300AF9549 /* CTSTestSuitesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED31FF1EA9D45300AF9549 /* CTSTestSuitesManager.m */; };
+		B8ED32051EA9D68500AF9549 /* TestCaseSample.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED32041EA9D68500AF9549 /* TestCaseSample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,14 @@
 		B8ED31EA1EA9D35000AF9549 /* AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ED31EE1EA9D35000AF9549 /* AppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppUITests.m; sourceTree = "<group>"; };
 		B8ED31F01EA9D35000AF9549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8ED31FA1EA9D45300AF9549 /* CTSTestGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSTestGroup.h; sourceTree = "<group>"; };
+		B8ED31FB1EA9D45300AF9549 /* CTSTestGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSTestGroup.m; sourceTree = "<group>"; };
+		B8ED31FC1EA9D45300AF9549 /* CTSTestItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSTestItem.h; sourceTree = "<group>"; };
+		B8ED31FD1EA9D45300AF9549 /* CTSTestItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSTestItem.m; sourceTree = "<group>"; };
+		B8ED31FE1EA9D45300AF9549 /* CTSTestSuitesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSTestSuitesManager.h; sourceTree = "<group>"; };
+		B8ED31FF1EA9D45300AF9549 /* CTSTestSuitesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSTestSuitesManager.m; sourceTree = "<group>"; };
+		B8ED32031EA9D68500AF9549 /* TestCaseSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCaseSample.h; sourceTree = "<group>"; };
+		B8ED32041EA9D68500AF9549 /* TestCaseSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCaseSample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,9 @@
 		B8ED31C51EA9D35000AF9549 = {
 			isa = PBXGroup;
 			children = (
+				B8ED32031EA9D68500AF9549 /* TestCaseSample.h */,
+				B8ED32041EA9D68500AF9549 /* TestCaseSample.m */,
+				B8ED31F91EA9D45200AF9549 /* TestSuites */,
 				B8ED31D01EA9D35000AF9549 /* App */,
 				B8ED31ED1EA9D35000AF9549 /* AppUITests */,
 				B8ED31CF1EA9D35000AF9549 /* Products */,
@@ -114,6 +129,19 @@
 				B8ED31F01EA9D35000AF9549 /* Info.plist */,
 			);
 			path = AppUITests;
+			sourceTree = "<group>";
+		};
+		B8ED31F91EA9D45200AF9549 /* TestSuites */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED31FA1EA9D45300AF9549 /* CTSTestGroup.h */,
+				B8ED31FB1EA9D45300AF9549 /* CTSTestGroup.m */,
+				B8ED31FC1EA9D45300AF9549 /* CTSTestItem.h */,
+				B8ED31FD1EA9D45300AF9549 /* CTSTestItem.m */,
+				B8ED31FE1EA9D45300AF9549 /* CTSTestSuitesManager.h */,
+				B8ED31FF1EA9D45300AF9549 /* CTSTestSuitesManager.m */,
+			);
+			path = TestSuites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +249,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8ED31D61EA9D35000AF9549 /* AppDelegate.m in Sources */,
+				B8ED32051EA9D68500AF9549 /* TestCaseSample.m in Sources */,
 				B8ED31D91EA9D35000AF9549 /* MasterViewController.m in Sources */,
+				B8ED32021EA9D45300AF9549 /* CTSTestSuitesManager.m in Sources */,
+				B8ED32001EA9D45300AF9549 /* CTSTestGroup.m in Sources */,
 				B8ED31D31EA9D35000AF9549 /* main.m in Sources */,
 				B8ED31DC1EA9D35000AF9549 /* DetailViewController.m in Sources */,
+				B8ED32011EA9D45300AF9549 /* CTSTestItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

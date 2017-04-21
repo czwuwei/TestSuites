@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "TestCaseSample.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -22,6 +23,9 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+
+    CTSTestSuitesManager* mngr = [CTSTestSuitesManager sharedManager];
+    [mngr registerTestSuitesLoader:[TestCaseSample new]];
     return YES;
 }
 
