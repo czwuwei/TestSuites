@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
-#import "TestCaseSample.h"
+#import "TestCaseDeviceCheck.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -25,7 +25,7 @@
     splitViewController.delegate = self;
 
     CTSTestSuitesManager* mngr = [CTSTestSuitesManager sharedManager];
-    [mngr registerTestSuitesLoader:[TestCaseSample new]];
+    [mngr registerTestSuitesLoader:[TestCaseDeviceCheck new]];
     return YES;
 }
 

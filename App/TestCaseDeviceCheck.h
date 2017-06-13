@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "CTSTestSuitesManager.h"
 
-@interface TestCaseSample : NSObject <CTSTestSuitesLoader>
+@interface TestCaseDeviceCheck : NSObject <CTSTestSuitesLoader>
 
 @end
